@@ -1,0 +1,14 @@
+import { createContext, useState } from "react";
+
+export const UserContext = createContext();
+
+function UserProvider({ children }) {
+  const [name, setName] = useState("Sunitha Rao");
+  return (
+    <UserContext.Provider value={{ name, setName }}>
+      {children}
+    </UserContext.Provider>
+  );
+}
+
+export default UserProvider;

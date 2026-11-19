@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First JS Program</title>
+  </head>
+  <body>
+    <h1 id="demo">My First JavaScript Program</h1>
+    <button onclick="clickMsg()">Click</button>
+
+    <script>
+      const name = "Sunitha";
+      const age = 22;
+      document.getElementById("demo").innerHTML = "Hello, World!";
+      document.write(name);
+      document.write("<br>");
+      document.write(age);
+      function clickMsg() {
+        alert("Hello, " + name + "!");
+      }
+    </script>
+  </body>
+</html>
